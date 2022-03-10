@@ -1,5 +1,5 @@
 function ohMyGod() {
-    var audio = new Audio("sound.mp4")
+    var audio = new Audio("sound.mp3")
     audio.play()
 }
 
