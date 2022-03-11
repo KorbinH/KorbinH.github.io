@@ -18,7 +18,7 @@ function main() {
 
 
     player = new Player(0, 10, 0);
-    scene = new Scene(gl, 4, 4, [1,0,0,1,1,0,0,1,1,1,0,1,1,1,1,1], [], {r: 1, g: 1, b: 1}, gibProgramInfo());
+    scene = new Scene(gl, 4, 4, [1,0,0,1,1,0,0,1,1,1,0,1,1,1,1,1], [], {r: 1, g: 1, b: 1}, programInfo);
 
     document.addEventListener("keydown", (e) => {
         switch (e.key) {
@@ -68,18 +68,18 @@ function main() {
         }
     });
 
-    setInterval(gameLoop, 1/60);
+    setInterval(gameLoop, 1000/60);
 }
 
 function gameLoop() {
     clearScreen(gl, {r: 1, g: 0, b: 1});
     render(gl, scene, player);
-    if (pressed.w) player.y -= 0.01;
-    if (pressed.a) player.x -= 0.01;
-    if (pressed.s) player.y += 0.01;
-    if (pressed.d) player.x += 0.01;
-    if (pressed.q) player.a -= 0.01;
-    if (pressed.e) player.a += 0.01;
+    if (pressed.w) player.y -= 0.1;
+    if (pressed.a) player.x -= 0.1;
+    if (pressed.s) player.y += 0.1;
+    if (pressed.d) player.x += 0.1;
+    if (pressed.q) player.a -= 0.1;
+    if (pressed.e) player.a += 0.1;
 }
 
 window.onload = main
