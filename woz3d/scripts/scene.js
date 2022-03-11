@@ -15,9 +15,28 @@ class Scene {
             verticies.push(Math.floor(i / width), 0.5, i % width);
             verticies.push(Math.floor(i / width) + 1, -0.5, i % width);
             verticies.push(Math.floor(i / width) + 1, 0.5, i % width);
-        }
 
-        console.log(verticies)
+            verticies.push(Math.floor(i / width), -0.5, i % width + 1);
+            verticies.push(Math.floor(i / width), 0.5, i % width + 1);
+            verticies.push(Math.floor(i / width) + 1, -0.5, i % width + 1);
+            verticies.push(Math.floor(i / width), 0.5, i % width + 1);
+            verticies.push(Math.floor(i / width) + 1, -0.5, i % width + 1);
+            verticies.push(Math.floor(i / width) + 1, 0.5, i % width + 1);
+
+            verticies.push(Math.floor(i / width), -0.5, i % width + 1);
+            verticies.push(Math.floor(i / width), 0.5, i % width + 1);
+            verticies.push(Math.floor(i / width), -0.5, i % width);
+            verticies.push(Math.floor(i / width), 0.5, i % width + 1);
+            verticies.push(Math.floor(i / width), -0.5, i % width);
+            verticies.push(Math.floor(i / width), 0.5, i % width);
+
+            verticies.push(Math.floor(i / width) + 1, -0.5, i % width + 1);
+            verticies.push(Math.floor(i / width) + 1, 0.5, i % width + 1);
+            verticies.push(Math.floor(i / width) + 1, -0.5, i % width);
+            verticies.push(Math.floor(i / width) + 1, 0.5, i % width + 1);
+            verticies.push(Math.floor(i / width) + 1, -0.5, i % width);
+            verticies.push(Math.floor(i / width) + 1, 0.5, i % width);
+        }
 
         this.model = {positions: gl.createBuffer(), vertexCount: Math.floor(verticies.length / 3)};
 
