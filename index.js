@@ -5,3 +5,7 @@ function water() {
 function knees() {
     window.location.href = "https://hotanimegirls-uwu.com/knees/";
 }
+
+function chinese() {
+    window.location.href = "https://hotanimegirls-uwu.com/chinese/";
+}
