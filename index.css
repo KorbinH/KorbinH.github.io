@@ -8,8 +8,6 @@ body, h1 {
     padding-bottom: 0vh;
 }
 
-
-
 .button {
   display: block;
   width: 75px;
@@ -35,6 +33,16 @@ header {
     color: tan;
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     letter-spacing: 2px;
+}
+
+.textLeftDown {
+    position: absolute;
+    bottom: -15px;
+    left: 7px;
+    color: tan;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    letter-spacing: 2px;
+    font-size: xx-large;
 }
 
 .textRight {
@@ -68,6 +76,7 @@ header {
     letter-spacing: .1.5em;
     animation: glitch-skew 0.5s infinite linear alternate-reverse;
 }
+
 .glitch::after {
     content: attr(data-text);
     position: absolute;
