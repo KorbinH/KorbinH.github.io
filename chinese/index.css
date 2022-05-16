@@ -65,7 +65,7 @@ header {
     position: relative;
     color: #daa520;
     font-size: 5vw;
-    letter-spacing: .1.5em;
+    letter-spacing: 1.5em;
     animation: glitch-skew 0.5s infinite linear alternate-reverse;
 }
 .glitch::after {

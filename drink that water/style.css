@@ -4,7 +4,6 @@ body, h1 {
     background-color: #202020;
 }
 
-
 .center {
     display: block;
     margin-left: auto;
@@ -19,5 +18,5 @@ body, h1 {
 
 .wrapper {
     margin: 0 auto;
-    width: 1000px;
+    width: 100%;
 }

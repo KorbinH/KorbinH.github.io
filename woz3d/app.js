@@ -72,14 +72,14 @@ function main() {
 }
 
 function gameLoop() {
-    clearScreen(gl, {r: 1, g: 0, b: 1});
+    clearScreen(gl, {r: 0, g: 0, b: 0});
     render(gl, scene, player);
     if (pressed.w) player.y -= 0.1;
     if (pressed.a) player.x -= 0.1;
     if (pressed.s) player.y += 0.1;
     if (pressed.d) player.x += 0.1;
-    if (pressed.q) player.a -= 0.1;
-    if (pressed.e) player.a += 0.1;
+    if (pressed.q) player.a -= 0.05;
+    if (pressed.e) player.a += 0.05;
 }
 
 window.onload = main
