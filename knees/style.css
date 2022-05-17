@@ -9,7 +9,7 @@ body, h1 {
     margin-left: auto;
     margin-right: auto;
     margin-top: 1%;
-    width: 14in;
+    width: 100%;
     height: 6.5 in;
 }
 
@@ -20,5 +20,5 @@ body, h1 {
 .wrapper {
     margin: 0 auto;
 
-    width: 1000px;
+    width: 100%
 }
